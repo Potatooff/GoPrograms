@@ -3,15 +3,22 @@ import (
 	"fmt"
 	"time"
 )
-func find_age(time uint16, birthyear uint16) uint16 {
+func find_age(time int, birthyear int) int {
 		result := time - birthyear
 		return result
 }
 func main() {
-	var birthyear uint16
+	var birthyear int
 	time := time.Now().Year()
 	fmt.Print("What is your birth year?\nYou: ")
 	fmt.Scan(&birthyear)
-	var lol uint8 = find_age(time, birthyear)
+	var lol int = find_age(time, birthyear)
 	fmt.Printf("You are %d years old!", lol)
+	if lol >= 18 {
+		fmt.Println("\nYou're an adult!")
+	} else if lol < 18 { 
+		fmt.Println("\nYou're young!")
+	} else {
+		fmt.Println("impossible!")
+	}
 }
