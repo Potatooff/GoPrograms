@@ -1,2 +1,5 @@
 # go_programs
-my roadmap to golang
+**My road to mastering Golang**
+
+- **Simple project section!**
+  * Age calculator based of the birth year
