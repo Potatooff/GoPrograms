@@ -1,3 +1,4 @@
+// Making a method here is useless but was just for the basics!
 package main;
 import (
 	"fmt"
